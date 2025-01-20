@@ -24,7 +24,7 @@ const Home = () => {
 				{todos.map((tarea, index) => (
 					<li>
 						{/*Filtro de todos los index menos el que se hace click */}
-						{tarea} <i class="fa-solid fa-trash" onClick={() => setTodos(todos.filter((t, currentIndex) => index != currentIndex ))}></i>
+						{tarea} <button onClick={() => setTodos(todos.filter((t, currentIndex) => index != currentIndex ))}>Eliminar</button>
 					</li>
 				))}
 

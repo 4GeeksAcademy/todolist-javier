@@ -44,6 +44,10 @@ input{
     background: #f5f5f5;
 }
 
-i{
-margin: auto 0;
+button{
+    opacity: 0;
+}
+
+li:hover button {
+    opacity: 1; 
 }
